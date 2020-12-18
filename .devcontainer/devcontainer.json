@@ -1,0 +1,24 @@
+{
+    "name": "backend",
+    "dockerComposeFile": [
+        "../docker-compose.yaml",
+        "../docker-compose.override.yaml"
+    ],
+    "service": "backend",
+    "workspaceFolder": "/src",
+    "settings": {
+        "python.pythonPath": "/opt/bb/bin/python3.8",
+        "python.linting.flake8Enabled": true,
+        "python.lingting.enabled": true,
+        "python.formatting.provider": "black",
+        "python.testing.pytestEnabled": true,
+        "python.testing.unittestEnabled": false,
+        "python.testing.nosetestsEnabled": false,
+        "python.testing.autoTestDiscoverOnSaveEnabled": true,
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "njpwerner.autodocstring"
+    ]
+}
